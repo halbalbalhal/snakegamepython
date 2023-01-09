@@ -14,6 +14,7 @@ screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('ОЧЕНЬ КРУТОЕ НАЗВАНИЕ КОТОРОЕ МЕНЯЕТ ВАШУ ЖИЗНЬ(змейка)')
 pygame.mouse.set_visible(False)
+# добавление музыки
 pygame.mixer.music.load('snake8bitmusic.mp3')
 pygame.mixer.music.play(-1)
 
@@ -34,7 +35,6 @@ def big_snake(snake_block1, snake_block2, snake_list):
 def Your_score(score):
     value = score_font.render("Счёт: " + str(score), True, al.yellow)
     screen.blit(value, [0, 0])
-
 
 # рекорд
 def high_score(rec):
